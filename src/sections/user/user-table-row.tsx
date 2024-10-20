@@ -58,7 +58,8 @@ export function UserTableRow({ row, selected, onSelectRow }: UserTableRowProps) 
         <TableCell>{row.quantity}</TableCell>
 
         <TableCell align="center">
-          <Iconify width={22} icon="solar:check-circle-bold" sx={{ color: 'success.main' }} />
+          <Iconify width={22} icon="mingcute:arrow-up-fill" sx={{ color: 'success.main' }} />
+          <Iconify width={22} icon="mingcute:arrow-down-fill" sx={{ color: 'error.main' }} />
         </TableCell>
 
         <TableCell align="right">
