@@ -29,66 +29,144 @@ export const _times = (index: number) =>
     '08/09/2024',
   ][index];
 
-export const _fullName = (index: number) =>
+export const _name = (index: number) =>
   [
-    'Billy Stoltenberg',
-    'Eloise Ebert',
-    'Teresa Luettgen',
-    'Salvador Mayert',
-    'Dr. Guadalupe Rath',
-    'Kelvin Pouros',
-    'Thelma Langworth',
-    'Kristen Wunsch',
-    'Steve Welch',
-    'Brian Jacobs',
-    'Lillie Schultz',
-    'Mr. Conrad Spinka',
-    'Charlene Krajcik',
-    'Kerry Kuhlman',
-    'Betty Hammes',
-    'Tony Paucek PhD',
-    'Sherri Davis',
-    'Angel Rolfson-Kulas',
-    'Dr. Lee Doyle-Grant',
-    'Cheryl Romaguera',
-    'Billy Braun',
-    'Adam Trantow',
-    'Brandon Von',
-    'Willis Ankunding',
+    'Cable coaxial',
+    'Cable de par trenzado',
+    'Cable de fibra óptica',
+    'Cable HDMI',
+    'Cable USB',
+    'Cable Ethernet',
+    'Cable VGA',
+    'Cable DVI',
+    'Cable RCA',
+    'Cable de alimentación',
+    'Cable de audio',
+    'Cable de video compuesto',
+    'Cable de red',
+    'Cable de impresora',
+    'Cable de datos',
+    'Cable de carga',
+    'Cable de extensión',
+    'Cable de antena',
+    'Cable de altavoz',
+    'Cable de micrófono',
+    'Cable de teléfono',
+    'Cable de monitor',
+    'Cable de teclado',
+    'Cable de mouse',
   ][index];
 
-export const _price = (index: number) =>
+export const _model = (index: number) =>
   [
-    35.17, 57.22, 64.78, 50.79, 9.57, 61.46, 96.73, 63.04, 33.18, 36.3, 54.42, 20.52, 62.82, 19.96,
-    25.93, 70.39, 23.11, 67.23, 14.31, 31.5, 26.72, 44.8, 37.87, 75.53,
+    'RG-6',
+    'Cat5e',
+    'OM3',
+    'HDMI 2.1',
+    'USB-C',
+    'Cat6',
+    'VGA HD15',
+    'DVI-D',
+    'RCA Composite',
+    'IEC C13',
+    '3.5mm TRS',
+    'Composite Video',
+    'Cat7',
+    'USB-B',
+    'SATA III',
+    'Lightning',
+    'Extension Cord 10ft',
+    'RG-59',
+    '16 AWG Speaker Wire',
+    'XLR',
+    'RJ11',
+    'DisplayPort',
+    'PS/2',
+    'USB-A',
   ][index];
 
-export const _company = (index: number) =>
+export const _type = (index: number) =>
   [
-    'Medhurst, Moore and Franey',
-    'Hahn, Homenick and Lind',
-    'Larkin LLC',
-    'Stamm, Larson and Mertz',
-    'Spencer, Raynor and Langosh',
-    'Lehner - Feeney',
-    'Leuschke, Harris and Kuhlman',
-    'Gutmann - Kassulke',
-    'Turcotte - Runolfsson',
-    'Howe - Anderson',
-    'Sipes - Yost',
-    'Johns - Aufderhar',
-    'Schmidt LLC',
-    'Smitham - Gerlach',
-    'Waelchi - VonRueden',
-    'Padberg - Macejkovic',
-    'Lemke - Ferry',
-    'Koch and Sons',
-    'Klein - Rolfson',
-    'Weimann LLC',
-    'White, Cassin and Goldner',
-    'Mohr, Langworth and Hills',
-    'Mitchell, Volkman and Prosacco',
-    'Streich Group',
+    'Cable coaxial', // RG-6
+    'Cable de par trenzado', // Cat5e
+    'Cable de fibra óptica', // OM3
+    'Cable HDMI', // HDMI 2.1
+    'Cable USB', // USB-C
+    'Cable Ethernet', // Cat6
+    'Cable VGA', // VGA HD15
+    'Cable DVI', // DVI-D
+    'Cable RCA', // RCA Composite
+    'Cable de alimentación', // IEC C13
+    'Cable de audio', // 3.5mm TRS
+    'Cable de video compuesto', // Composite Video
+    'Cable de red', // Cat7
+    'Cable de impresora', // USB-B
+    'Cable de datos', // SATA III
+    'Cable de carga', // Lightning
+    'Cable de extensión', // Extension Cord 10ft
+    'Cable de antena', // RG-59
+    'Cable de altavoz', // 16 AWG Speaker Wire
+    'Cable de micrófono', // XLR
+    'Cable de teléfono', // RJ11
+    'Cable de monitor', // DisplayPort
+    'Cable de teclado', // PS/2
+    'Cable de mouse', // USB-A
+  ][index];
+
+export const _length = (index: number) =>
+  [
+    '1.5m', // Cable coaxial
+    '2m', // Cable de par trenzado
+    '3m', // Cable de fibra óptica
+    '1.8m', // Cable HDMI
+    '1m', // Cable USB
+    '2.5m', // Cable Ethernet
+    '1.5m', // Cable VGA
+    '2m', // Cable DVI
+    '1.2m', // Cable RCA
+    '1.5m', // Cable de alimentación
+    '1m', // Cable de audio
+    '1.5m', // Cable de video compuesto
+    '3m', // Cable de red
+    '1.8m', // Cable de impresora
+    '0.5m', // Cable de datos
+    '1m', // Cable de carga
+    '3m', // Cable de extensión
+    '2m', // Cable de antena
+    '2.5m', // Cable de altavoz
+    '1.5m', // Cable de micrófono
+    '2m', // Cable de teléfono
+    '1.8m', // Cable de monitor
+    '1.5m', // Cable de teclado
+    '1.2m', // Cable de mouse
+  ][index];
+
+export const _quantity = (index: number) =>
+  [
+    50, // Cable coaxial
+    100, // Cable de par trenzado
+    75, // Cable de fibra óptica
+    60, // Cable HDMI
+    120, // Cable USB
+    80, // Cable Ethernet
+    90, // Cable VGA
+    70, // Cable DVI
+    110, // Cable RCA
+    40, // Cable de alimentación
+    130, // Cable de audio
+    55, // Cable de video compuesto
+    95, // Cable de red
+    65, // Cable de impresora
+    85, // Cable de datos
+    150, // Cable de carga
+    30, // Cable de extensión
+    45, // Cable de antena
+    105, // Cable de altavoz
+    50, // Cable de micrófono
+    100, // Cable de teléfono
+    60, // Cable de monitor
+    90, // Cable de teclado
+    120, // Cable de mouse
   ][index];
 
 export const _boolean = (index: number) =>
