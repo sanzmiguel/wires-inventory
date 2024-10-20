@@ -10,7 +10,8 @@ import { DashboardLayout } from 'src/layouts/dashboard';
 // ----------------------------------------------------------------------
 
 export const HomePage = lazy(() => import('src/pages/home'));
-export const UserPage = lazy(() => import('src/pages/user'));
+export const WirePage = lazy(() => import('src/pages/wire'));
+export const NewWirePage = lazy(() => import('src/pages/new-wire'));
 
 // ----------------------------------------------------------------------
 
@@ -38,8 +39,8 @@ export function Router() {
         </DashboardLayout>
       ),
       children: [
-        { element: <HomePage />, path: 'user' },
-        { element: <UserPage />, index: true },
+        { element: <NewWirePage />, path: 'new-wire' },
+        { element: <WirePage />, index: true },
       ],
     }
   ]);

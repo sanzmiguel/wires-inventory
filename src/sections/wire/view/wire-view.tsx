@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
@@ -9,6 +10,8 @@ import Typography from '@mui/material/Typography';
 import TableContainer from '@mui/material/TableContainer';
 import TablePagination from '@mui/material/TablePagination';
 
+import { useRouter } from 'src/routes/hooks';
+
 import { _wires } from 'src/_mock';
 import { DashboardContent } from 'src/layouts/dashboard';
 
@@ -16,18 +19,19 @@ import { Iconify } from 'src/components/iconify';
 import { Scrollbar } from 'src/components/scrollbar';
 
 import { TableNoData } from '../table-no-data';
-import { UserTableRow } from '../user-table-row';
-import { UserTableHead } from '../user-table-head';
+import { UserTableRow } from '../wire-table-row';
+import { UserTableHead } from '../wire-table-head';
 import { TableEmptyRows } from '../table-empty-rows';
-import { UserTableToolbar } from '../user-table-toolbar';
+import { UserTableToolbar } from '../wire-table-toolbar';
 import { emptyRows, applyFilter, getComparator } from '../utils';
 
-import type { WireProps } from '../user-table-row';
+import type { WireProps } from '../wire-table-row';
 
 // ----------------------------------------------------------------------
 
-export function UserView() {
+export function WireView() {
   const table = useTable();
+  const router = useRouter();
 
   const [filterName, setFilterName] = useState('');
 
@@ -39,6 +43,10 @@ export function UserView() {
 
   const notFound = !dataFiltered.length && !!filterName;
 
+  const createWire = useCallback(() => {
+    router.push('/new-wire');
+  }, [router]);
+
   return (
     <DashboardContent>
       <Box display="flex" alignItems="center" mb={5}>
@@ -49,6 +57,7 @@ export function UserView() {
           variant="contained"
           color="inherit"
           startIcon={<Iconify icon="mingcute:add-line" />}
+          onClick={createWire}
         >
           Nuevo cable
         </Button>

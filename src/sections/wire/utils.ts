@@ -1,4 +1,4 @@
-import type { WireProps } from './user-table-row';
+import type { WireProps } from './wire-table-row';
 
 // ----------------------------------------------------------------------
 

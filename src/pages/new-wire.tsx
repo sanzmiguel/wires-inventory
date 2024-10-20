@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 
 import { CONFIG } from 'src/config-global';
 
-import { UserView } from 'src/sections/user/view';
+import { NewWireView } from 'src/sections/new-wire';
 
 // ----------------------------------------------------------------------
 
@@ -10,10 +10,10 @@ export default function Page() {
   return (
     <>
       <Helmet>
-        <title> {`Cables - ${CONFIG.appName}`}</title>
+        <title> {`Sign in - ${CONFIG.appName}`}</title>
       </Helmet>
 
-      <UserView />
+      <NewWireView />
     </>
   );
 }
